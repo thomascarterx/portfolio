@@ -13,8 +13,8 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
-  username: root
-  password:
+  username: <%= ENV['PORTFOLIO_DEV_USER'] %>
+  password: <%= ENV['PORTFOLIO_DEV_PASSWORD'] %>
   socket: /var/lib/mysql/mysql.sock
 
 development:
@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: portfolio_production
-  username: portfolio
+  database: <%= ENV['PORTFOLIO_DATABASE_NAME'] %>
+  username: <%= ENV['PORTFOLIO_DATABASE_USER'] %>
   password: <%= ENV['PORTFOLIO_DATABASE_PASSWORD'] %>
