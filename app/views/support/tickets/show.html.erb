@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @support_ticket.customer_id %>
+</p>
+
+<p>
+  <strong>Problem:</strong>
+  <%= @support_ticket.problem %>
+</p>
+
+<p>
+  <strong>Urgency:</strong>
+  <%= @support_ticket.urgency %>
+</p>
+
+<p>
+  <strong>Closed:</strong>
+  <%= @support_ticket.closed %>
+</p>
+
+<%= link_to 'Edit', edit_support_ticket_path(@support_ticket) %> |
+<%= link_to 'Back', support_tickets_path %>

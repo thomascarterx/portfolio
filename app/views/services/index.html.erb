@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+<section id="services-header" class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1>Services</h1>
+        </div>
+    </div>
+</section>
+
+<section id="services-content" class="container-fluid">
+    <div class="row">
+      <% @services.each do |s| %>
+          <div class="col-lg-4">
+            <%= link_to s do %>
+              <%= image_tag s.feature_image_url %>
+            <% end %>
+            <h3><%= link_to s.title, s %></h3>
+            <p><strong>Description:</strong> <%= s.description %></p>
+            <%= link_to 'Read more...', s %>
+          </div>
+      <% end %>
+    </div>
+</section>

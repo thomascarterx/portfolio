@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+<section id="articles-header" class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1><%= @article.title %></h1>
+        </div>
+    </div>
+</section>
+
+<section id="articles-content" class="container-fluid">
+    <div class="row">
+          <div class="col-lg-4">
+            <%= image_tag @article.feature_image_url %>
+            <h3><%= @article.title %></h3>
+            <p>by <%= @article.author %> on <%= @article.created_at %></p>
+            <p><%= @article.tags %></p>
+            <p><%= @article.content %></p>
+          </div>
+    </div>
+</section>
+
+<%= link_to 'Back', articles_path %>

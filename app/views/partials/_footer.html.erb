@@ -1,0 +1,98 @@
+<section id="footer">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="row">
+              <div class="col-lg-1"></div>
+              <div class="col-lg-3">
+                <ul class="nav">
+                  <li><h1 style="color:#FFF;">ABOUT THOMAS</h1></li>
+                  <li><p style="color:#FFF;">
+                    Full-stack Developer, Rubyist, WordPress Extraordinaire, 
+                    and Rocket Ship Builder (not really, but kinda) ;) . Thomas is 
+                    passionate about all things programming, and keeps up with 
+                    changes in the digital world. Fluent across the spectrum from 
+                    Front-end to Back-end. Produces high-quality websites and 
+                    applications, and exceptional user experience.
+                  </p></li>
+                  <li><a href="#" style="font-weight: bolder;">I'm available for freelance work</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3" style="margin-left: 20px;">
+                <ul class="nav" style="padding-top: 10px;">
+                  <li>
+                    <ul class="list-inline">
+                      <li>
+                        <%= link_to 'https://twitter.com/thomascarterx' do %>
+                          <i class="fa fa-twitter" style="font-size: 60px;"></i>
+                        <% end %>
+                      </li>
+                      <li style="color: #FFF;">Follow 
+                      <%= link_to '@thomascarterx', 'https://twitter.com/thomascarterx' %> for web development articles, opinions, and links</li>
+                    </ul>
+                  </li>
+                  <li style="padding-top: 10px;">
+                    <ul class="list-inline">
+                      <li>
+                        <%= link_to 'https://www.github.com/thomascarterx' do %>
+                          <i class="fa fa-github" style="font-size: 60px;"></i>
+                        <% end %>
+                      </li>
+                      <li style="color: #FFF;">View <%= link_to 'thomascarterx', 'https://www.github.com/thomascarterx' %> on Github for open-source projects</li>
+                    </ul>
+                  </li>
+                  <li style="padding-top: 10px;">
+                    <ul class="list-inline">
+                      <li>
+                        <%= link_to 'https://www.linkedin.com/in/thomas-carter-76287490' do %>
+                          <i class="fa fa-linkedin" style="font-size: 60px;"></i>
+                        <% end %>
+                      </li>
+                      <li style="color: #FFF;">View my <%= link_to 'LinkedIn Profile', 'https://www.linkedin.com/in/thomas-carter-76287490' %></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-4" style="margin-left: 20px;">
+                <ul class="nav" style="padding-top: 10px;">
+                  <li>
+                    <h3><%= link_to 'ABOUT', about_path %></h3><br>
+                    Learn about my skills and workflow
+                  </li>
+                  <li>
+                    <h3><%= link_to 'PORTFOLIO', portfolio_path %></h3><br>
+                    View all my work
+                  </li>
+                  <li>
+                    <h3><%= link_to 'ARTICLES', articles_path %></h3><br>
+                    Read articles, opinions, and tutorials
+                  </li>
+                  <li>
+                    <h3><%= link_to 'CONTACT', contact_path %></h3><br>
+                    Send a general message
+                  </li>
+                  <li>
+                    <h3><%= link_to 'HIRE THOMAS', quote_path %></h3><br>
+                    Got a project in mind? Click here to get started.
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-1"></div>
+        </div>
+
+        <hr>
+
+        <div class="container-fluid copyright">
+            <div class="row">
+                <div class="col-lg-6">
+                    <a href="mailto://thomas@thomascarter.net">
+                        &copy; Thomas Carter 2016
+                    </a>
+                </div>
+                <div class="col-lg-6 text-right">
+                    Made with <i class="fa fa-heart"></i> &amp; Ruby on Rails
+                </div>
+            </div>
+        </div>
+      </div>
+    </nav>
+</section>

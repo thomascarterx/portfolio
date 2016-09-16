@@ -22,6 +22,9 @@ module Portfolio
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
     
+    # Prevents pluralization of database table names
+    #config.active_record.pluralize_table_names = false
+
     # Integrates Bower
     # Bower asset paths
     root.join('vendor', 'assets', 'bower_components').to_s.tap do |bower_path|

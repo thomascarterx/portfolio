@@ -1,0 +1,68 @@
+<section id="contact-header" class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h1>Request a Quote</h1>
+        </div>
+    </div>
+</section>
+
+<section id="contact-content" class="container-fluid" style="padding-bottom: 10px;">
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+            <p>If you have a project in mind and you think I may be able to help you, please fill out the form below. To learn about how I work and the value I can bring to your project, please visit the <%= link_to 'about', about_path %> page, or to see what I've produced for other clients, view my <%= link_to 'portfolio', portfolio_path %>.</p>
+            <br>
+            <p>General messages may be sent via the <%= link_to 'contact form', contact_path %>.</p>
+            <h3><strong>About You</strong></h3>
+            <form>
+              <div class="form-group">
+                <label for="InputName">Your name<span style="color: red;">*</span></label>
+                <input type="text" class="form-control" id="InputName" placeholder="e.g. John Smith">
+              </div>
+              <div class="form-group">
+                <label for="InputEmail">Email address<span style="color: red;">*</span></label>
+                <input type="email" class="form-control" id="InputEmail" placeholder="e.g. jsmith@email.com">
+              </div>
+              <div class="form-group">
+                <label>Contact Method</label>
+                <label for="InputContactMethod">Telephone number or Skype/Google Hangouts username</label>
+                <input type="text" class="form-control" id="InputContactMethod">
+              </div>
+              <div class="form-group">
+                <label for="InputWebsite">Your website</label>
+                <input type="text" class="form-control" id="InputWebsite" placeholder="e.g. jsmith.com">
+              </div>
+              <div class="form-group">
+                <label for="InputRefer">How did you hear about me?</label>
+                <input type="text" class="form-control" id="InputRefer">
+              </div>
+              <h3><strong>Project Details</strong></h3>
+              <p>Please specify a budget and ideal start date. This helps me determine the best solution for your circumstances.</p>
+              <div class="form-group">
+                <div class="form-group">
+                  <label for="InputBudget">Your Budget</label>
+                  <input type="text" class="form-control" id="InputBudget">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-group">
+                  <label for="InputStartDate">Your Ideal Start Date</label>
+                  <input type="text" class="form-control" id="InputStartDate">
+                </div>
+              </div>
+              <h3><strong>Project Description<span style="color: red;">*</span></strong></h3>
+              <p>Please briefly describe your project, what you aim to achieve, what you'd like me to do, and links to any appropriate materials.
+              <div class="form-group">
+                <textarea class="form-control" rows="10" id="InputDescription"></textarea>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> <strong>Send me news, updates, and offers in the future</strong><br><em>I promise to keep your details private and send emails only occasionally. You may unsubscribe at any time.</em>
+                </label>
+              </div>
+              <button type="submit" class="btn btn-default">SEND</button>
+            </form>
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+</section>

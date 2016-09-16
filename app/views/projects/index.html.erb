@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+<section id="projects-header" class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1>Portfolio</h1>
+        </div>
+    </div>
+</section>
+
+<section id="projects-content" class="container-fluid">
+    <div class="row">
+      <% @projects.each do |project| %>
+          <div class="col-lg-4">
+            <%= link_to project do %>
+              <%= image_tag project.feature_image_url %>
+            <% end %>
+            <h3><%= link_to project.title, project %></h3>
+            <p><strong>Client:</strong> <%= project.client %></p>
+            <p><strong>Tags:</strong> <%= project.tags %></p>
+            <p><strong>Description:</strong> <%= project.description %></p>
+            <p><strong>Problem:</strong> <%= project.problem %></p>
+            <p><strong>Solution:</strong> <%= project.solution %></p>
+            <%= link_to 'Read more...', project %>
+          </div>
+      <% end %>
+    </div>
+</section>

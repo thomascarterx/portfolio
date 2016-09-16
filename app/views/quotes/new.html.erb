@@ -1,0 +1,40 @@
+<section id="contact-header" class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h1>Request a Quote</h1>
+        </div>
+    </div>
+</section>
+
+<section id="contact-content" class="container-fluid" style="padding-bottom: 10px;">
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+            <p>If you have a project in mind and you think I may be able to help you, please fill out the form below. To learn about how I work and the value I can bring to your project, please visit the <%= link_to 'about', about_path %> page, or to see what I've produced for other clients, view my <%= link_to 'portfolio', portfolio_path %>.</p>
+            <br>
+            <p>General messages may be sent via the <%= link_to 'contact form', contact_path %>.</p>
+            <h3><strong>About You</strong></h3>
+            <%= simple_form_for @quote, :html => {:class => 'form-horizontal'} do |f| %>
+                <%= f.input :name, :required => true %>
+                <%= f.input :email, :required => true %>
+                <h3><strong>Contact Method</strong><br>
+                Telephone number or Skype/Google Hangouts username</h3>
+                <%= f.input :contact_method %>
+                <h3><strong>How did you hear about me?</strong></h3>
+                <%= f.input :referred_by %>
+                <h3><strong>Project Details</strong></h3>
+                <p>Please specify a budget and ideal start date. This helps me determine the best solution for your circumstances.</p>
+                <%= f.input :budget %>
+                <%= f.input :start_date %>
+                <h3><strong>Project Description</strong></h3>
+                <p>Please briefly describe your project, what you aim to achieve, what you'd like me to do, and links to any appropriate materials.</p>
+                <%= f.input :description, :as => :text, :required => true %>
+                <div class= "hidden">
+                    <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+                </div>
+                <%= f.button :submit, 'SEND', :class => "btn btn-default" %>
+            <% end %>
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+</section>

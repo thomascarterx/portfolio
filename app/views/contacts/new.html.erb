@@ -1,0 +1,29 @@
+<section id="contact-header" class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h1>Get in touch</h1>
+        </div>
+    </div>
+</section>
+
+<section id="contact-content" class="container-fluid" style="padding-bottom: 10px;">
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+            <p>Use this form to send me a general message. If you are interested in working with me please use the <%= link_to 'quote form', quote_path %> instead. If you are having problems with one of my products please submit a ticket in the support forums. Thank you</p>
+            <br>
+            <h3><strong>About You</strong></h3>
+            <%= simple_form_for @contact, :html => {:class => 'form-horizontal'} do |f| %>
+                <%= f.input :name, :required => true %>
+                <%= f.input :email, :required => true %>
+                <%= f.input :website %>
+                <%= f.input :message, :as => :text, :required => true %>
+                <div class= "hidden">
+                    <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+                </div>
+                <%= f.button :submit, 'SEND', :class => "btn btn-default" %>
+            <% end %>
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+</section>

@@ -1,0 +1,136 @@
+body { 
+    padding-top: 60px;
+    padding-bottom: 70px; 
+}
+
+#home-header {
+    background: image-url('cockpit') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    object-fit: cover;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    position: relative;
+    overflow: hidden;
+    opacity: 0.8;
+}
+
+#home-header h1 {
+    position: relative;
+    z-index: 2;
+    opacity: 1.0;
+}
+
+#home-header h2 {
+    position: relative;
+    z-index: 2;
+    opacity: 1.0;
+}
+
+.words {
+    background-color: #FFF;
+    opacity: 0.9;
+    padding-bottom: 20px;
+    margin-left: 20px;
+}
+
+#home-header h3 {
+    position: relative;
+    z-index: 2;
+    opacity: 1.0;
+}
+
+#logo img {
+    width: 65px;
+    height: 66px;
+}
+
+#logo {
+    position: relative;
+    top: -25px;
+}
+
+.copyright {
+    padding-top: 10px;
+    padding-bottom: 10px; 
+}
+
+#home-work {
+    padding-top: 30px;
+}
+
+hr.styled {
+    border-top: 1px solid #8c8b8b;
+    text-align: center;
+}
+hr.styled:after {
+    content: '§';
+    display: inline-block;
+    position: relative;
+    top: -14px;
+    padding: 0 10px;
+    background: #f0f0f0;
+    color: #8c8b8b;
+    font-size: 18px;
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+
+#footer {
+    color: #FFF;
+}
+
+#footer a {
+}
+
+#about-header {
+    padding-top: 100px;
+}
+
+#about-content {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.indent {
+    margin-left: 20px;
+}
+
+#contact-header {
+    padding-top: 100px;
+}
+
+.hidden { display: none; }
+
+/*flash*/
+
+.alert-error {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+}
+
+.alert-alert {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+}
+
+.alert-success {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
+}
+
+.alert-notice {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
+}

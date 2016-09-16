@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+<section id="projects-header" class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1><%= @project.title %></h1>
+        </div>
+    </div>
+</section>
+
+<section id="projects-content" class="container-fluid">
+    <div class="row">
+          <div class="col-lg-4">
+            <%= image_tag @project.feature_image_url %>
+            <p><strong>Client:</strong> <%= @project.client %></p>
+            <p><strong>Tags:</strong> <%= @project.tags %></p>
+            <p><strong>Description:</strong> <%= @project.description %></p>
+            <p><strong>Problem:</strong> <%= @project.problem %></p>
+            <p><strong>Solution:</strong> <%= @project.solution %></p>
+          </div>
+    </div>
+</section>
+
+<%= link_to 'Back', projects_path %>
